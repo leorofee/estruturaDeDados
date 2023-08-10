@@ -47,6 +47,15 @@ public class Vetor {
         s.append("]");
         return s.toString();
     }
+
+    public int busca (String elemento){
+        for (int i = 0; i < tamanho; i++){
+            if (this.elementos[i].equals(elemento)){
+                return i; 
+            }
+        }   return -1;
+    }
+    
     
     
 }
